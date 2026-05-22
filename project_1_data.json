@@ -1,0 +1,263 @@
+Full Data for Testing
+===============
+
+[
+    {
+        "employee_id": "E001",
+        "employee_name": "John Smith",
+        "department": "Engineering",
+        "designation": "Software Engineer",
+        "salary": 95000,
+        "joining_date": "2022-01-15",
+        "city": "San Francisco",
+        "state": "CA",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E002",
+        "employee_name": "Emily Johnson",
+        "department": "Marketing",
+        "designation": "Marketing Manager",
+        "salary": 105000,
+        "joining_date": "2021-07-10",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E003",
+        "employee_name": "Michael Brown",
+        "department": "Finance",
+        "designation": "Financial Analyst",
+        "salary": 85000,
+        "joining_date": "2023-03-05",
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E004",
+        "employee_name": "Sarah Davis",
+        "department": "HR",
+        "designation": "HR Executive",
+        "salary": 75000,
+        "joining_date": "2022-11-20",
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E005",
+        "employee_name": "David Wilson",
+        "department": "Engineering",
+        "designation": "Data Engineer",
+        "salary": 115000,
+        "joining_date": "2020-09-18",
+        "city": "Seattle",
+        "state": "WA",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E006",
+        "employee_name": "Jessica Taylor",
+        "department": "Sales",
+        "designation": "Sales Executive",
+        "salary": 78000,
+        "joining_date": "2021-05-22",
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E007",
+        "employee_name": "Daniel Anderson",
+        "department": "Engineering",
+        "designation": "DevOps Engineer",
+        "salary": 110000,
+        "joining_date": "2019-08-14",
+        "city": "Denver",
+        "state": "CO",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E008",
+        "employee_name": "Olivia Martinez",
+        "department": "Finance",
+        "designation": "Accountant",
+        "salary": 72000,
+        "joining_date": "2022-06-30",
+        "city": "Miami",
+        "state": "FL",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E009",
+        "employee_name": "William Thomas",
+        "department": "Marketing",
+        "designation": "Content Strategist",
+        "salary": 88000,
+        "joining_date": "2020-12-11",
+        "city": "Boston",
+        "state": "MA",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E010",
+        "employee_name": "Sophia White",
+        "department": "HR",
+        "designation": "HR Manager",
+        "salary": 98000,
+        "joining_date": "2018-04-25",
+        "city": "Dallas",
+        "state": "TX",
+        "country": "USA"
+    }
+]
+
+
+Incremental Data for Testing
+=====================
+
+E003 → designation + salary updated
+E005 → designation + salary updated
+E008 → designation + salary + city updated
+
+E011, E012 → brand new records
+ 
+[
+    {
+        "employee_id": "E003",
+        "employee_name": "Michael Brown",
+        "department": "Finance",
+        "designation": "Senior Financial Analyst",
+        "salary": 92000,
+        "joining_date": "2023-03-05",
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E005",
+        "employee_name": "David Wilson",
+        "department": "Engineering",
+        "designation": "Senior Data Engineer",
+        "salary": 125000,
+        "joining_date": "2020-09-18",
+        "city": "Seattle",
+        "state": "WA",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E008",
+        "employee_name": "Olivia Martinez",
+        "department": "Finance",
+        "designation": "Senior Accountant",
+        "salary": 80000,
+        "joining_date": "2022-06-30",
+        "city": "Orlando",
+        "state": "FL",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E011",
+        "employee_name": "James Walker",
+        "department": "Engineering",
+        "designation": "Backend Engineer",
+        "salary": 99000,
+        "joining_date": "2024-02-10",
+        "city": "San Jose",
+        "state": "CA",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E012",
+        "employee_name": "Ava Harris",
+        "department": "Sales",
+        "designation": "Sales Manager",
+        "salary": 102000,
+        "joining_date": "2024-05-01",
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+    }
+]
+
+
+    Incremental with Invalid Data for Testing
+
+    ==============================
+    
+    E007 → designation + salary + city updated
+    E013, E014, E015 → brand new records
+    Two Invalid records having Employee_id as Blank
+    
+[
+    {
+        "employee_id": "E007",
+        "employee_name": "Daniel Anderson",
+        "department": "Engineering",
+        "designation": "Senior DevOps Engineer",
+        "salary": 120000,
+        "joining_date": "2019-08-14",
+        "city": "Boulder",
+        "state": "CO",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E013",
+        "employee_name": "Liam Scott",
+        "department": "Marketing",
+        "designation": "SEO Specialist",
+        "salary": 87000,
+        "joining_date": "2024-08-12",
+        "city": "San Diego",
+        "state": "CA",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E014",
+        "employee_name": "Emma Green",
+        "department": "Finance",
+        "designation": "Financial Consultant",
+        "salary": 91000,
+        "joining_date": "2024-09-01",
+        "city": "Atlanta",
+        "state": "GA",
+        "country": "USA"
+    },
+    {
+        "employee_id": "E015",
+        "employee_name": "Noah Clark",
+        "department": "Sales",
+        "designation": "Account Executive",
+        "salary": 95000,
+        "joining_date": "2024-10-15",
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+    },
+    {
+        "employee_id": "",
+        "employee_name": "James Anderson",
+        "department": "HR",
+        "designation": "HR Assistant",
+        "salary": 50000,
+        "joining_date": "2024-01-01",
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+    },
+    {
+        "employee_id": "",
+        "employee_name": "Sophia Martinez",
+        "department": "Engineering",
+        "designation": "Software Intern",
+        "salary": 30000,
+        "joining_date": "2024-02-01",
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA"
+    }
+]
+
+
